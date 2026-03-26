@@ -1,0 +1,13 @@
+[package]
+name = "fg-sparky-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = { version = "1.0.102", features = ["backtrace"] }
+poise = { git = "https://github.com/serenity-rs/poise", version = "0.6.2" }
+serenity = "0.12.5"
+sqlx = { version = "0.8.6", features = ["sqlite", "tls-rustls", "uuid", "chrono", "runtime-tokio"] }
+tokio = { version = "1.50.0", features = ["full"] }
+tracing = { version = "0.1.44", features = ["async-await", "log"] }
+tracing-subscriber = "0.3.23"
